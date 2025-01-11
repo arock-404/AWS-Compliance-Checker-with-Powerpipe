@@ -26,7 +26,7 @@ def set_aws_credentials():
 
 def run_powerpipe():
     powerpipe_path = "/usr/local/bin/powerpipe"
-    command = f'{powerpipe_path} benchmark run [ENTER YOUR COMPLIANCE BENCHMARK NAME (eg --> aws_compliance.benchmark.cis_v200)] --output json'
+    command = f'{powerpipe_path} benchmark run [ENTER YOUR COMPLIANCE BENCHMARK NAME (eg --> aws_compliance.benchmark.cis_v200)] --output json' # Enter your compliance benchmark name
 
     try:
         process = Popen(command, shell=True, stdout=PIPE, stderr=STDOUT, env={
